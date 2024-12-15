@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Page Rii Market</title>
+    <style>
+        /* Styling Umum */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            height: 100%;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        /* Background Video */
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Video berada di belakang konten */
+        }
+
+        /* Efek Garis Neon */
+        .neon-line {
+            position: fixed;
+            top: -10px;
+            width: 2px;
+            height: 100px;
+            background: #a29bfe;
+            box-shadow: 0 0 10px #a29bfe, 0 0 20px #a29bfe;
+            animation: fall linear infinite;
+            opacity: 0.7;
+            pointer-events: none;
+            z-index: 999; /* Di atas video, tapi di bawah konten */
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+
+        /* Container Utama */
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: 80px auto;
+            background: rgba(27, 27, 42, 0.9); /* Transparansi */
+            border: 2px solid #6b0000;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+            position: relative;
+            z-index: 3; /* Konten di atas garis neon */
+        }
+
+        /* Header */
+        .header {
+            height: 150px;
+            background: url('file-2bXMtZS1WkNhuD1ihp6b6V') no-repeat center/cover;
+            position: relative;
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+        }
+
+        /* Content */
+        .content {
+            text-align: center;
+            padding: 60px 20px 20px;
+        }
+        h1 {
+            font-size: 28px;
+            margin: 10px 0;
+        }
+        .role {
+            background: #5b65f2;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 12px;
+        }
+
+        /* Buttons */
+        .button a {
+            display: block;
+            width: 90%;
+            margin: 10px auto;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            background: #5b65f2;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .button a:hover {
+            background: #4a54e1;
+        }
+
+        /* About Section */
+        .about {
+            text-align: left;
+            padding: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .fun-fact {
+            margin-top: 10px;
+            background: #6a1212;
+            padding: 10px;
+            border-radius: 5px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        /* Roles */
+        .roles span {
+            display: inline-block;
+            background: #ff9f43;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #000;
+        }
+              .roles .second-role {
+            background: #207572;
+        }
+                .roles .third-role {
+            background: #8a1919;
+        }
+                .roles .fourth-role {
+            background: #19428a;
+        }
+                .roles .fiveth-role {
+            background: #82198a;
+        }
+                .roles .seventh-role {
+            background: #198a3d;
+        }
+                .roles .eight-role {
+            background: #eb10d5;
+                }
+    </style>
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline class="video-bg">
+        <source src="4f2ea0de1b85bfc0575a64f8497b61ae.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video HTML5.
+    </video>
+        <!-- Background Music -->
+    <audio autoplay loop>
+        <source src="8d82b5_Star_Wars_Main_Theme_Song.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio HTML5.
+    </audio>
+
+    <!-- Efek Garis Neon -->
+    <script>
+        function createNeonLine() {
+            const neonLine = document.createElement('div');
+            neonLine.classList.add('neon-line');
+            neonLine.style.left = Math.random() * 100 + 'vw';
+            neonLine.style.animationDuration = Math.random() * 3 + 2 + 's';
+            neonLine.style.opacity = Math.random() * 0.5 + 0.7;
+            document.body.appendChild(neonLine);
+
+            setTimeout(() => neonLine.remove(), 5000);
+        }
+        setInterval(createNeonLine, 100);
+    </script>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="Messenger_creation_45847720-6CDB-42D0-AF65-62690650470D.jpeg" alt="Profile" class="profile-img">
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <h1>RII MARKET 🍀</h1>
+            <div class="role">OWNER</div>
+
+            <!-- Buttons -->
+            <div class="button">
+                <a href="https://wa.me/6282284061462" target="_blank">WhatsApp</a>
+                <a href="https://chat.whatsapp.com/JHHuwl3BRmX33mTdTxlB9m" target="_blank">Grup Whatsapp</a>
+            </div>
+
+            <!-- About Me -->
+            <div class="about">
+                <h3>ABOUT ME</h3>
+                <p>Hi, I'm Rii, Aku adalah owner dari<strong>Rii Market 🍀</strong>Siap memberi anda pelayanan bintang lima !!</p>
+
+                <h3>TRUSTED SINCE</h3>
+                <p>2023</p>
+
+                <h3>ROLES OWNER</h3>
+                <div class="roles">
+                    <span>Rii Market</span>
+                    <span class="second-role">Rii</span>
+                    <span class="third-role">Tuan Rii</span>
+                    <span class="fourth-role">Yang Mulia Rii</span>
+                    <span class="fiveth-role">Poet</span>
+                    <span class="sixth-role">Ganteng</span>
+                    <span class="seventh-role">Rajin Menabung</span>
+                  <span class="eight-role">Ella</span>
+                </div>
+
+                <!-- Fun Fact -->
+                <h3>FUN FACT</h3>
+                <div class="fun-fact">
+                    Rii suka makan, tapi ga gemuk-gemuk 🍀
+                    <br>Four-leaf clovers: meaning faith, hope, love, and luck :3
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
