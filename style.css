@@ -1,0 +1,47 @@
+/* Role Colors */
+.role-market {
+    background-color: #5b65f2; /* Biru */
+    color: #fff;
+}
+
+.role-owner {
+    background-color: #ff6347; /* Merah Tomat */
+    color: #fff;
+}
+
+.role-tuan {
+    background-color: #32cd32; /* Hijau Cerah */
+    color: #fff;
+}
+
+.role-mulia {
+    background-color: #ffa500; /* Oranye */
+    color: #fff;
+}
+
+.role-poet {
+    background-color: #8a2be2; /* Ungu */
+    color: #fff;
+}
+
+.role-ganteng {
+    background-color: #00bfff; /* Biru Langit */
+    color: #fff;
+}
+
+.role-hemat {
+    background-color: #ffd700; /* Kuning Emas */
+    color: #000; /* Warna teks hitam agar kontras */
+}
+
+/* Styling Umum untuk Role */
+.roles span {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
